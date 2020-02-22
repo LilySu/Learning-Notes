@@ -1,4 +1,4 @@
-# Learning-Notes
+## Notes from Hackerrank regarding sets, lists inputs
 
 If the inputs are given on one line separated by a space character, use split() to get the separate values in the form of a list:
 ```
@@ -28,7 +28,7 @@ CREATING SETS
 MODIFYING SETS
 
 Using the add() function:
-
+```
 >> myset.add('c')
 >> myset
 {'a', 'c', 'b'}
@@ -36,9 +36,9 @@ Using the add() function:
 >> myset.add((5, 4))
 >> myset
 {'a', 'c', 'b', (5, 4)}
-
+```
 Using the update() function:
-
+```
 >> myset.update([1, 2, 3, 4]) # update() only works for iterable objects
 >> myset
 {'a', 1, 'c', 'b', 4, 2, (5, 4), 3}
@@ -48,7 +48,7 @@ Using the update() function:
 >> myset.update({1, 6}, [5, 13])
 >> myset
 {'a', 1, 'c', 'b', 4, 5, 6, 7, 8, 2, (5, 4), 13, 3}
-
+```
 REMOVING ITEMS
 
 Both the discard() and remove() functions take a single value as an argument and removes that value from the set. If that value is not present, discard() does nothing, but remove() will raise a KeyError exception.
